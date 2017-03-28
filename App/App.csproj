@@ -55,16 +55,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientForm.cs">
+    <Compile Include="Book\EditBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientForm.Designer.cs">
-      <DependentUpon>ClientForm.cs</DependentUpon>
+    <Compile Include="Book\EditBook.Designer.cs">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\ListBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\ListBook.Designer.cs">
+      <DependentUpon>ListBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\NewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\NewBook.Designer.cs">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\EditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\EditClient.Designer.cs">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ListClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ListClient.Designer.cs">
+      <DependentUpon>ListClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\NewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\NewClient.Designer.cs">
+      <DependentUpon>NewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ClientForm.resx">
-      <DependentUpon>ClientForm.cs</DependentUpon>
+    <EmbeddedResource Include="Book\EditBook.resx">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\ListBook.resx">
+      <DependentUpon>ListBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\NewBook.resx">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\EditClient.resx">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\ListClient.resx">
+      <DependentUpon>ListClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\newClient.resx">
+      <DependentUpon>NewClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +147,10 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{6b2b7d87-fd43-4894-9f18-4c452144e444}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{541db43e-e908-4fe4-9df5-11fe8f66185b}</Project>
+      <Name>Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

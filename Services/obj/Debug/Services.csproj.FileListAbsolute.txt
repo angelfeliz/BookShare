@@ -1,0 +1,9 @@
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\Services.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\Services.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\DAL.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\EntityFramework.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\DAL.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\EntityFramework.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.pdb

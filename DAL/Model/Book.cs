@@ -12,7 +12,8 @@ namespace DAL.Model
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Index(IsUnique=true)]
+        [StringLength(50)]
+        [Index("INDEX_NAME",IsUnique=true)]
         public string Name { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }

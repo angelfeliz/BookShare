@@ -36,5 +36,11 @@ namespace DAL.Repository
         {
             return DbSet.Find(Id);
         }
+
+        public void Update(T entity)
+        {
+            Context.Entry(entity).State = EntityState.Modified;
+            Context.SaveChanges();
+        }
     }
 }

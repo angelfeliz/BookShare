@@ -50,14 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookShopContext.cs" />
-    <Compile Include="Migrations\201703280413041_change1.cs" />
-    <Compile Include="Migrations\201703280413041_change1.Designer.cs">
-      <DependentUpon>201703280413041_change1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703280428137_keys.cs" />
-    <Compile Include="Migrations\201703280428137_keys.Designer.cs">
-      <DependentUpon>201703280428137_keys.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\Client.cs" />
@@ -68,14 +60,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703280413041_change1.resx">
-      <DependentUpon>201703280413041_change1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703280428137_keys.resx">
-      <DependentUpon>201703280428137_keys.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

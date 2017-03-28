@@ -11,3 +11,13 @@ C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.cspro
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.Migrations.change1.resources
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.Migrations.keys.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\DAL.dll.config
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\DAL.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\DAL.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.pdb
