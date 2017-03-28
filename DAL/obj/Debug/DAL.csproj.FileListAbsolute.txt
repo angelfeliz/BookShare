@@ -1,0 +1,13 @@
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\DAL.dll.config
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\DAL.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\DAL.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\EntityFramework.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\EntityFramework.xml
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.Migrations.change1.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\DAL\obj\Debug\DAL.Migrations.keys.resources

@@ -1,0 +1,4 @@
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Application\obj\Debug\Application.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Application\obj\Debug\Application.Client.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Application\obj\Debug\Application.Properties.Resources.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Application\obj\Debug\Application.csproj.GenerateResource.Cache
