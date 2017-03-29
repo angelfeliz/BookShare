@@ -14,21 +14,9 @@ namespace App
 {
     public partial class MainForm : Form
     {
-        #region Client forms instance
-        NewClient newClient = new NewClient();
-        ListClient listClient = new ListClient();
-        #endregion
-        #region Book forms instance
-        NewBook newBook = new NewBook();
-        ListBook listBook = new ListBook();
-        #endregion
-
         private void MainForm_Load(object sender, EventArgs e)
         {
-            newClient.MdiParent = this;
-            listClient.MdiParent = this;
-            newBook.MdiParent = this;
-            listBook.MdiParent = this;
+            
         }
         public MainForm()
         {
@@ -37,22 +25,37 @@ namespace App
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            NewClient newClient = new NewClient();
+            newClient.MdiParent = this;
             newClient.Show();
         }
 
         private void listToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ListClient listClient = new ListClient();
+            listClient.MdiParent = this;
             listClient.Show();
         }
 
         private void newToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            NewBook newBook = new NewBook();
+            newBook.MdiParent = this;
             newBook.Show();
         }
 
         private void listToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            ListBook listBook = new ListBook();
+            listBook.MdiParent = this;
             listBook.Show();
+        }
+
+        private void shopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShopForm shopForm = new ShopForm();
+            shopForm.MdiParent = this;
+            shopForm.Show();            
         }
     }
 }

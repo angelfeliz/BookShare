@@ -17,18 +17,20 @@ namespace App.Client
         public EditClient(DAL.Model.Client client)
         {
             InitializeComponent();
+            idTxt.Text = client.Id.ToString();
             firstNameTxt.Text = client.FirstName;
             lastNameTxt.Text = client.LastName;
             phoneTxt.Text = client.Phone;
             categoryCbx.DataSource = new BindingSource(ClientServices.GetClientCategorys(), null);
             categoryCbx.DisplayMember = "Value";
             categoryCbx.ValueMember = "Key";
-            categoryCbx.SelectedValue = client.Category;
+            categoryCbx.Text = ClientServices.GetClientCategorys().Where( x => x.Key == client.Category.ToString()).Select( x => x.Value).ToString();
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
             DAL.Model.Client client = new DAL.Model.Client();
+            client.Id = int.Parse(idTxt.Text);
             client.FirstName = firstNameTxt.Text;
             client.LastName = lastNameTxt.Text;
             client.Phone = phoneTxt.Text;

@@ -39,7 +39,7 @@
             this.BookListDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BookListDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.BookListDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BookListDgv.Location = new System.Drawing.Point(0, 256);
+            this.BookListDgv.Location = new System.Drawing.Point(2, 35);
             this.BookListDgv.Name = "BookListDgv";
             this.BookListDgv.Size = new System.Drawing.Size(647, 226);
             this.BookListDgv.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 479);
+            this.ClientSize = new System.Drawing.Size(643, 284);
             this.Controls.Add(this.BookListDgv);
             this.Name = "ListBook";
             this.Text = "ListBook";

@@ -45,7 +45,11 @@ namespace Services
             {
                 try
                 {
-                    _db.Update(entity);
+                    client.FirstName = entity.FirstName;
+                    client.LastName = entity.LastName;
+                    client.Phone = entity.Phone;
+                    client.Category = entity.Category;
+                    _db.Update(client);
                     return "Ok";
                 }
                 catch (Exception ex)

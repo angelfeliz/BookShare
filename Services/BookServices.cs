@@ -41,11 +41,14 @@ namespace Services
 
         public static string UpdateBook(Book entity)
         {
-            Book client = GetBookById(entity.Id);
-            if (client != null)
+            Book book = GetBookById(entity.Id);
+            if (book != null)
             {
                 try
                 {
+                    book.Name = entity.Name;
+                    book.Description = entity.Description;
+                    book.Price = entity.Price;
                     _db.Update(entity);
                     return "Ok";
                 }

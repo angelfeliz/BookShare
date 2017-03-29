@@ -35,12 +35,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.priceTxt = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.idTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 44);
+            this.label1.Location = new System.Drawing.Point(23, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -48,7 +50,7 @@
             // 
             // nameTxt
             // 
-            this.nameTxt.Location = new System.Drawing.Point(25, 60);
+            this.nameTxt.Location = new System.Drawing.Point(26, 116);
             this.nameTxt.Name = "nameTxt";
             this.nameTxt.Size = new System.Drawing.Size(302, 20);
             this.nameTxt.TabIndex = 1;
@@ -56,7 +58,7 @@
             // Description
             // 
             this.Description.AutoSize = true;
-            this.Description.Location = new System.Drawing.Point(22, 103);
+            this.Description.Location = new System.Drawing.Point(23, 159);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(60, 13);
             this.Description.TabIndex = 2;
@@ -64,7 +66,7 @@
             // 
             // descriptionTxt
             // 
-            this.descriptionTxt.Location = new System.Drawing.Point(25, 119);
+            this.descriptionTxt.Location = new System.Drawing.Point(26, 175);
             this.descriptionTxt.Multiline = true;
             this.descriptionTxt.Name = "descriptionTxt";
             this.descriptionTxt.Size = new System.Drawing.Size(302, 69);
@@ -73,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 216);
+            this.label2.Location = new System.Drawing.Point(23, 272);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 4;
@@ -81,14 +83,14 @@
             // 
             // priceTxt
             // 
-            this.priceTxt.Location = new System.Drawing.Point(25, 232);
+            this.priceTxt.Location = new System.Drawing.Point(26, 288);
             this.priceTxt.Name = "priceTxt";
             this.priceTxt.Size = new System.Drawing.Size(100, 20);
             this.priceTxt.TabIndex = 5;
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(252, 229);
+            this.updateBtn.Location = new System.Drawing.Point(253, 285);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(75, 23);
             this.updateBtn.TabIndex = 6;
@@ -96,11 +98,30 @@
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Book No";
+            // 
+            // idTxt
+            // 
+            this.idTxt.Location = new System.Drawing.Point(26, 45);
+            this.idTxt.Name = "idTxt";
+            this.idTxt.ReadOnly = true;
+            this.idTxt.Size = new System.Drawing.Size(100, 20);
+            this.idTxt.TabIndex = 8;
+            // 
             // EditBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 271);
+            this.ClientSize = new System.Drawing.Size(336, 322);
+            this.Controls.Add(this.idTxt);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.priceTxt);
             this.Controls.Add(this.label2);
@@ -124,5 +145,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox priceTxt;
         private System.Windows.Forms.Button updateBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox idTxt;
     }
 }
