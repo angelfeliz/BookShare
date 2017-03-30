@@ -34,7 +34,7 @@ namespace App.Client
             if (e.ColumnIndex == 0) {
                 string IdStr = clientListDgv.Rows[e.RowIndex].Cells[1].Value.ToString();
                 int Id = int.Parse(IdStr);
-                EditClient editForm = new EditClient(ClientServices.GetClientById(Id));
+                EditClient editForm = new EditClient(ClientServices.GetClientById(Id), this);
                 editForm.Show();
             }
         }

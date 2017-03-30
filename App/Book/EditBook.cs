@@ -14,10 +14,11 @@ namespace App.Book
 {
     public partial class EditBook : Form
     {
-        public EditBook(int Id)
+        private ListBook _listBook;
+        public EditBook(DAL.Model.Book book, Form parent)
         {
             InitializeComponent();
-            DAL.Model.Book book = Services.BookServices.GetBookById(Id);
+            _listBook = parent as ListBook;     
             idTxt.Text = book.Id.ToString();
             nameTxt.Text = book.Name;
             descriptionTxt.Text = book.Description;
@@ -32,7 +33,17 @@ namespace App.Book
             book.Description = descriptionTxt.Text;
             book.Price = double.Parse(priceTxt.Text);
 
-            Services.BookServices.UpdateBook(book);
+            try
+            {
+                Services.BookServices.UpdateBook(book);
+                _listBook.BookListDgv.DataSource = Services.BookServices.ListBook();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

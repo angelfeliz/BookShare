@@ -41,7 +41,7 @@
             this.clientListDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.clientListDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.clientListDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.clientListDgv.Location = new System.Drawing.Point(12, 235);
+            this.clientListDgv.Location = new System.Drawing.Point(12, 12);
             this.clientListDgv.Name = "clientListDgv";
             this.clientListDgv.ReadOnly = true;
             this.clientListDgv.Size = new System.Drawing.Size(957, 290);
@@ -52,7 +52,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 537);
+            this.ClientSize = new System.Drawing.Size(981, 321);
             this.Controls.Add(this.clientListDgv);
             this.Name = "ListClient";
             this.Text = "ListClient";
@@ -64,6 +64,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView clientListDgv;
+        public System.Windows.Forms.DataGridView clientListDgv;
     }
 }

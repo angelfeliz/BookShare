@@ -36,7 +36,7 @@ namespace App.Book
             {
                 string IdStr = BookListDgv.Rows[e.RowIndex].Cells[1].Value.ToString();
                 int Id = int.Parse(IdStr);
-                EditBook editForm = new EditBook(Id);
+                EditBook editForm = new EditBook(Services.BookServices.GetBookById(Id), this);
                 editForm.Show();
             }
         }

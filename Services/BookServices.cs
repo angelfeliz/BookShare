@@ -49,7 +49,7 @@ namespace Services
                     book.Name = entity.Name;
                     book.Description = entity.Description;
                     book.Price = entity.Price;
-                    _db.Update(entity);
+                    _db.Update(book);
                     return "Ok";
                 }
                 catch (Exception ex)

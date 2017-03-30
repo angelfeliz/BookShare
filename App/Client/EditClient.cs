@@ -14,9 +14,11 @@ namespace App.Client
 {
     public partial class EditClient : Form
     {
-        public EditClient(DAL.Model.Client client)
+        private ListClient _listClient;
+        public EditClient(DAL.Model.Client client, Form parent)
         {
             InitializeComponent();
+            _listClient = parent as ListClient;
             idTxt.Text = client.Id.ToString();
             firstNameTxt.Text = client.FirstName;
             lastNameTxt.Text = client.LastName;
@@ -25,10 +27,11 @@ namespace App.Client
             categoryCbx.DisplayMember = "Value";
             categoryCbx.ValueMember = "Key";
             categoryCbx.Text = ClientServices.GetClientCategorys().Where( x => x.Key == client.Category.ToString()).Select( x => x.Value).ToString();
-        }
+        }       
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
+            saveBtn.Enabled = false;
             DAL.Model.Client client = new DAL.Model.Client();
             client.Id = int.Parse(idTxt.Text);
             client.FirstName = firstNameTxt.Text;
@@ -36,7 +39,18 @@ namespace App.Client
             client.Phone = phoneTxt.Text;
             client.Category = int.Parse(categoryCbx.SelectedValue.ToString());
 
-            ClientServices.UpdateClient(client);
+            try
+            {
+                ClientServices.UpdateClient(client);
+                _listClient.clientListDgv.DataSource = Services.ClientServices.ListClient();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                saveBtn.Enabled = true;
+            }
+            
         }
      }
 }

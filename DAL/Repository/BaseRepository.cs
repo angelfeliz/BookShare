@@ -46,6 +46,7 @@ namespace DAL.Repository
         public void AddManyToMany(T entity)
         {
             DbSet.Add(entity);
+            Context.ChangeTracker.Entries<DAL.Model.Book>().ToList().ForEach(p => p.State = EntityState.Unchanged);            
             Context.SaveChanges();
         }
     }

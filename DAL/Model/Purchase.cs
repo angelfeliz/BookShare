@@ -8,19 +8,22 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
-   public class Purchase
+    public class Purchase
     {
 
         public Purchase()
         {
-            this.books = new HashSet<Book>();            
+            this.books = new HashSet<Book>();
         }
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
+        
+        public int ClientId { get; set; }
+        public double Total { get; set; }
         #region navigation property
-         public virtual Client clients { get; set; }
+        [ForeignKey("ClientId")]
+        public virtual Client clients { get; set; }
          public virtual ICollection<Book> books { get; set; }
         #endregion
     }

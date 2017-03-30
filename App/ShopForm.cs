@@ -104,11 +104,10 @@ namespace App
 
         private void buyBtn_Click(object sender, EventArgs e)
         {
-
+            buyBtn.Enabled = false;
             try
             {
-                DAL.Model.Purchase purchase = new DAL.Model.Purchase();
-                // IList<DAL.Model.Book> books = new List<DAL.Model.Book>();
+                DAL.Model.Purchase purchase = new DAL.Model.Purchase();                
                 var b = purchase.books;
                 for (int x = 0; x < itemDgv.Rows.Count; x++)
                 {
@@ -117,13 +116,23 @@ namespace App
                         Id = int.Parse(itemDgv.Rows[x].Cells[0].Value.ToString()),
                     });
                 }
-                purchase.clients = new DAL.Model.Client() { Id = int.Parse(clientIdTxt.Text) };
-                
+                purchase.ClientId = int.Parse(clientIdTxt.Text);
+                purchase.Total = double.Parse(totalTxt.Text);
+
                 Services.PurchaseServices.AddPurchase(purchase);
+                clientIdTxt.Text = string.Empty;
+                fullNameTxt.Text = string.Empty;
+                subTotalTxt.Text = "0";
+                discountTxt.Text = "0";
+                totalTxt.Text = "0";
+                itemDgv.Rows.Clear();
+                itemDgv.Refresh();
+                buyBtn.Enabled = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error on purchase", MessageBoxButtons.OK);
+                buyBtn.Enabled = true;
             }
         }
              

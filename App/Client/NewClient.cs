@@ -23,6 +23,7 @@ namespace App.Client
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
+            saveBtn.Enabled = false;
             DAL.Model.Client client = new DAL.Model.Client();
             client.FirstName = firstNameTxt.Text;
             client.LastName = lastNameTxt.Text;
@@ -32,9 +33,14 @@ namespace App.Client
             try
             {
                 Services.ClientServices.AddClient(client);
+                firstNameTxt.Text = string.Empty;
+                client.LastName = string.Empty;
+                client.Phone = string.Empty;                
+                saveBtn.Enabled = true;
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                saveBtn.Enabled = true;
             }
         }
     }

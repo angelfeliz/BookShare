@@ -22,8 +22,8 @@ namespace Services
         public static string AddPurchase(Purchase entity)
         {
             try
-            {
-                _db.Add(entity);
+            {                
+                _db.AddManyToMany(entity);
 
                 return "Ok";
             }

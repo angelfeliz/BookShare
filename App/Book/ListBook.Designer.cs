@@ -61,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView BookListDgv;
+        public System.Windows.Forms.DataGridView BookListDgv;
     }
 }
