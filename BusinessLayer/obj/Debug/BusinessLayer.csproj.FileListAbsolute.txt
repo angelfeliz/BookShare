@@ -1,0 +1,9 @@
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\DAL.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.pdb

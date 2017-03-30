@@ -7,3 +7,12 @@ C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\bin\Debug\EntityFramew
 C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.dll
 C:\Users\anrodriguez\Desktop\SmallWinformExample\Services\obj\Debug\Services.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\Services.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\Services.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\DAL.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\EntityFramework.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\DAL.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\bin\Debug\EntityFramework.xml
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\obj\Debug\Services.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\Services\obj\Debug\Services.pdb

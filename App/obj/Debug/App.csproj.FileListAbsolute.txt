@@ -6,7 +6,6 @@ C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\EntityFra
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\DAL.pdb
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\EntityFramework.xml
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.csprojResolveAssemblyReference.cache
-C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.ClientForm.resources
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Properties.Resources.resources
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.csproj.GenerateResource.Cache
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.exe
@@ -38,3 +37,16 @@ C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.x
 C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.exe
 C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\BusinessLayer.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\Services.dll
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\BusinessLayer.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\Services.pdb
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Book.EditBook.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Book.ListBook.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Book.NewBook.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Client.EditClient.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Client.ListClient.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Client.NewClient.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Client.SearchClient.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.MainForm.resources
+C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.ShopForm.resources

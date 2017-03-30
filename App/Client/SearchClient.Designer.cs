@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lastNameTxt = new System.Windows.Forms.TextBox();
             this.clientDgv = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.clientDgv)).BeginInit();
             this.SuspendLayout();
@@ -44,12 +44,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Lastname";
             // 
-            // textBox1
+            // lastNameTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(11, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 20);
-            this.textBox1.TabIndex = 2;
+            this.lastNameTxt.Location = new System.Drawing.Point(11, 40);
+            this.lastNameTxt.Name = "lastNameTxt";
+            this.lastNameTxt.Size = new System.Drawing.Size(425, 20);
+            this.lastNameTxt.TabIndex = 2;
+            this.lastNameTxt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // clientDgv
             // 
@@ -68,7 +69,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 239);
             this.Controls.Add(this.clientDgv);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lastNameTxt);
             this.Controls.Add(this.label1);
             this.Name = "SearchClient";
             this.Text = "SearchClient";
@@ -82,7 +83,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lastNameTxt;
         private System.Windows.Forms.DataGridView clientDgv;
     }
 }

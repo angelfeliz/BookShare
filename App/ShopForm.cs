@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using App.Client;
 using Services;
-using DAL.Model;
+using BusinessLayer;
 
 
 namespace App
@@ -17,6 +17,7 @@ namespace App
     public partial class ShopForm : Form
     {
         IList<DAL.Model.Book> books = new List<DAL.Model.Book>();
+        private MembershipFactory _factory = new MembershipFactory();
         public ShopForm()
         {
             InitializeComponent();
@@ -51,6 +52,9 @@ namespace App
             bookCbo.DataSource = books.OrderBy(x => x.Id).ToList();
             bookCbo.DisplayMember = "Name";
             bookCbo.ValueMember = "Id";
+
+            memeberTxt.Text = "1";
+            memeberLbl.Text = "Standard";
         }
 
         private void clientCbo_Format(object sender, ListControlConvertEventArgs e)
@@ -84,7 +88,9 @@ namespace App
                 {                    
                     DAL.Model.Book b = BookServices.GetBookById(selectValue);
                     books.Add(b);
-                    itemDgv.Rows.Add(b.Id.ToString(), b.Name, b.Price.ToString());                    
+                    itemDgv.Rows.Add(b.Id.ToString(), b.Name, b.Price.ToString());
+                    double price = Convert.ToDouble(totalTxt.Text);
+                    totalTxt.Text = (price + b.Price).ToString();
                 }
             }
         }
@@ -92,6 +98,19 @@ namespace App
         private void itemDgv_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buyBtn_Click(object sender, EventArgs e)
+        {
+            int memberCategoryId;
+            double price;
+            if (int.TryParse(memeberTxt.Text, out memberCategoryId))
+            {
+                double.TryParse(totalTxt.Text, out price);
+                _factory.GetAccountMemeber(memberCategoryId).MembershipDiscout(price);
+            }
+            
+            
         }
     }
 }
