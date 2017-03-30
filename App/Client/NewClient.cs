@@ -34,8 +34,8 @@ namespace App.Client
             {
                 Services.ClientServices.AddClient(client);
                 firstNameTxt.Text = string.Empty;
-                client.LastName = string.Empty;
-                client.Phone = string.Empty;                
+                lastNameTxt.Text = string.Empty;
+                phoneTxt.Text = string.Empty;                
                 saveBtn.Enabled = true;
             }
             catch (Exception ex) {

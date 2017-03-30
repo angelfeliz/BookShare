@@ -50,18 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookShopContext.cs" />
-    <Compile Include="Migrations\201703301721224_remove unique index in book.cs" />
-    <Compile Include="Migrations\201703301721224_remove unique index in book.Designer.cs">
-      <DependentUpon>201703301721224_remove unique index in book.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703301737509_add client to purchase.cs" />
-    <Compile Include="Migrations\201703301737509_add client to purchase.Designer.cs">
-      <DependentUpon>201703301737509_add client to purchase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703301745276_add total to purchase.cs" />
-    <Compile Include="Migrations\201703301745276_add total to purchase.Designer.cs">
-      <DependentUpon>201703301745276_add total to purchase.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\Client.cs" />
@@ -73,17 +61,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703301721224_remove unique index in book.resx">
-      <DependentUpon>201703301721224_remove unique index in book.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703301737509_add client to purchase.resx">
-      <DependentUpon>201703301737509_add client to purchase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703301745276_add total to purchase.resx">
-      <DependentUpon>201703301745276_add total to purchase.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

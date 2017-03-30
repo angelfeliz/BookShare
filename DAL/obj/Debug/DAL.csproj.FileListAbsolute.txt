@@ -20,7 +20,4 @@ C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.x
 C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.dll
 C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.pdb
-C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.Migrations.removeuniqueindexinbook.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
-C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.Migrations.addclienttopurchase.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.Migrations.addtotaltopurchase.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
