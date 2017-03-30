@@ -10,6 +10,10 @@ namespace DAL.Model
 {
    public class Client
     {
+        public Client()
+        {
+            this.purchases = new HashSet<Purchase>();
+        }
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -17,6 +21,6 @@ namespace DAL.Model
         public string Phone { get; set; }
         public int Category { get; set; }
 
-        public virtual Book book { get; set; }
+        public virtual ICollection<Purchase> purchases { get; set; }
     }
 }

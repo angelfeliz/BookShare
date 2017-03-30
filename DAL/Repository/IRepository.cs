@@ -11,5 +11,6 @@ namespace DAL.Repository
         void Add(T entity);
         T GetById(int Id);
         ICollection<T> GetAll();
+        void Update(T entity);
     }
 }

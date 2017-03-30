@@ -33,14 +33,19 @@ namespace DAL.Repository
         }
 
         public T GetById(int Id)
-        {
-           
+        {           
             return DbSet.Find(Id);
         }
 
         public void Update(T entity)
         {
             Context.Entry(entity).State = EntityState.Modified;
+            Context.SaveChanges();
+        }
+
+        public void AddManyToMany(T entity)
+        {
+            DbSet.Add(entity);
             Context.SaveChanges();
         }
     }

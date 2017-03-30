@@ -12,31 +12,6 @@ C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.exe
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.pdb
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.csprojResolveAssemblyReference.cache
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.EditBook.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.ListBook.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.NewBook.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.EditClient.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.ListClient.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.NewClient.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.SearchClient.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.MainForm.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Properties.Resources.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.ShopForm.resources
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.csproj.GenerateResource.Cache
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.exe.config
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.exe
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.pdb
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\DAL.dll
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.dll
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\Services.dll
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\DAL.pdb
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\Services.pdb
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.xml
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.exe
-C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.pdb
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\BusinessLayer.dll
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\Services.dll
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\bin\Debug\BusinessLayer.pdb
@@ -50,3 +25,31 @@ C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Clien
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.Client.SearchClient.resources
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.MainForm.resources
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\App\obj\Debug\App.ShopForm.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.exe.config
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.exe
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\App.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\BusinessLayer.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\DAL.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\Services.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\BusinessLayer.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\DAL.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\Services.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.csprojResolveAssemblyReference.cache
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.EditBook.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.ListBook.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.NewBook.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Book.SearchBook.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.EditClient.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.ListClient.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.NewClient.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Client.SearchClient.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.MainForm.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.Properties.Resources.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.ShopForm.resources
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.csproj.GenerateResource.Cache
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.exe
+C:\Users\anrodriguez\Desktop\SmallWinformExample\App\obj\Debug\App.pdb

@@ -9,25 +9,21 @@ namespace BusinessLayer
 {
     public class MembershipFactory : IMemeberFactory
     {
-        public enum  MembershiptCategory {
-            Standard = 1,
-            Premium,
-            VIP
-        }
+       
         public IAccountMember GetAccountMemeber(int memberTypeId)
         {
             IAccountMember accountMember;
             
             switch (memberTypeId) {
-                case (int)MembershiptCategory.Standard :
+                case (int)Constants.MembershiptCategory.Standard :
                     accountMember = new StandardMembership();
                 break;
 
-                case (int)MembershiptCategory.Premium :
+                case (int)Constants.MembershiptCategory.Premium :
                     accountMember = new PremiumMembership();
                 break;
 
-                case (int)MembershiptCategory.VIP :
+                case (int)Constants.MembershiptCategory.VIP :
                     accountMember = new VipMembership();
                 break;
                 default:

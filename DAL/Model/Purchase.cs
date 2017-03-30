@@ -8,16 +8,20 @@ using System.Threading.Tasks;
 
 namespace DAL.Model
 {
-    public class Book
+   public class Purchase
     {
+
+        public Purchase()
+        {
+            this.books = new HashSet<Book>();            
+        }
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [StringLength(50)]
-        [Index("INDEX_NAME",IsUnique=true)]
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public string Description { get; set; }
 
-        public virtual ICollection<Purchase> Purchases { get; set; }
+        #region navigation property
+         public virtual Client clients { get; set; }
+         public virtual ICollection<Book> books { get; set; }
+        #endregion
     }
 }

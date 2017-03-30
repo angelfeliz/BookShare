@@ -7,3 +7,12 @@ C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\bin\Debug
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\angel\Documents\Visual Studio 2015\MasterDetail\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\DAL.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\anrodriguez\Desktop\SmallWinformExample\BusinessLayer\obj\Debug\BusinessLayer.pdb

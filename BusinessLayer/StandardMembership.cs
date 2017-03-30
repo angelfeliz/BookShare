@@ -11,7 +11,7 @@ namespace BusinessLayer
     {
         public double MembershipDiscout(double price)
         {
-            return price - ((price * Constants.DISCOUNT_FOR_STANDARD_MEMBERSHIP) / 100);
+            return ((price * Constants.DISCOUNT_FOR_STANDARD_MEMBERSHIP) / 100);
         }
 
         public bool ApplyMembership(DateTime createDate, int CategoryId)

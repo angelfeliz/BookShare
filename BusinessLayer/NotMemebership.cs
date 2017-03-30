@@ -16,7 +16,7 @@ namespace BusinessLayer
 
         public double MembershipDiscout(double price)
         {
-            return price;
+            return 0;
         }
 
         public bool MemebershipValidity(int Id)

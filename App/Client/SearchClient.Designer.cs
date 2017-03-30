@@ -62,6 +62,7 @@
             this.clientDgv.Name = "clientDgv";
             this.clientDgv.Size = new System.Drawing.Size(631, 164);
             this.clientDgv.TabIndex = 3;
+            this.clientDgv.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.clientDgv_CellMouseDoubleClick);
             // 
             // SearchClient
             // 

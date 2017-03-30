@@ -73,6 +73,12 @@
     <Compile Include="Book\NewBook.Designer.cs">
       <DependentUpon>NewBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Book\SearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\SearchBook.Designer.cs">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Client\EditClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Book\NewBook.resx">
       <DependentUpon>NewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\SearchBook.resx">
+      <DependentUpon>SearchBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\EditClient.resx">
       <DependentUpon>EditClient.cs</DependentUpon>

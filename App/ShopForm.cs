@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using App.Client;
+using App.Book;
 using Services;
 using BusinessLayer;
 
@@ -15,9 +16,12 @@ using BusinessLayer;
 namespace App
 {
     public partial class ShopForm : Form
-    {
-        IList<DAL.Model.Book> books = new List<DAL.Model.Book>();
+    {        
         private MembershipFactory _factory = new MembershipFactory();
+
+        IList<DAL.Model.Book> books = new List<DAL.Model.Book>();
+        public int memberShipTypeId = 0;
+
         public ShopForm()
         {
             InitializeComponent();
@@ -25,7 +29,7 @@ namespace App
 
         private void findClientBtn_Click(object sender, EventArgs e)
         {
-            SearchClient searchClient = new SearchClient();
+            SearchClient searchClient = new SearchClient(this);
             searchClient.ShowDialog(this);
         }
 
@@ -53,8 +57,8 @@ namespace App
             bookCbo.DisplayMember = "Name";
             bookCbo.ValueMember = "Id";
 
-            memeberTxt.Text = "1";
-            memeberLbl.Text = "Standard";
+           
+           // memeberLbl.Text = "Standard";
         }
 
         private void clientCbo_Format(object sender, ListControlConvertEventArgs e)
@@ -88,9 +92,7 @@ namespace App
                 {                    
                     DAL.Model.Book b = BookServices.GetBookById(selectValue);
                     books.Add(b);
-                    itemDgv.Rows.Add(b.Id.ToString(), b.Name, b.Price.ToString());
-                    double price = Convert.ToDouble(totalTxt.Text);
-                    totalTxt.Text = (price + b.Price).ToString();
+                    itemDgv.Rows.Add(b.Id.ToString(), b.Name, b.Price.ToString());                 
                 }
             }
         }
@@ -102,15 +104,62 @@ namespace App
 
         private void buyBtn_Click(object sender, EventArgs e)
         {
-            int memberCategoryId;
-            double price;
-            if (int.TryParse(memeberTxt.Text, out memberCategoryId))
+
+            try
             {
-                double.TryParse(totalTxt.Text, out price);
-                _factory.GetAccountMemeber(memberCategoryId).MembershipDiscout(price);
+                DAL.Model.Purchase purchase = new DAL.Model.Purchase();
+                // IList<DAL.Model.Book> books = new List<DAL.Model.Book>();
+                var b = purchase.books;
+                for (int x = 0; x < itemDgv.Rows.Count; x++)
+                {
+                    purchase.books.Add(new DAL.Model.Book()
+                    {
+                        Id = int.Parse(itemDgv.Rows[x].Cells[0].Value.ToString()),
+                    });
+                }
+                purchase.clients = new DAL.Model.Client() { Id = int.Parse(clientIdTxt.Text) };
+                
+                Services.PurchaseServices.AddPurchase(purchase);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error on purchase", MessageBoxButtons.OK);
+            }
+        }
+             
+
+        private void searchBookBtn_Click(object sender, EventArgs e)
+        {
+            SearchBook searchBookForm = new SearchBook(this);
+            searchBookForm.Show();
+        }
+
+        private void itemDgv_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            double total = 0;
+            double price;
+            for (int x = 0; x < itemDgv.Rows.Count; x++)
+            {
+                double.TryParse(itemDgv.Rows[x].Cells[2].Value.ToString(), out price);
+                total = total + price;
+            }
+            subTotalTxt.Text = total.ToString();
+        }
+
+        private void subTotalTxt_TextChanged(object sender, EventArgs e)
+        {
             
+          double subTotalPrice;            
+          double.TryParse(subTotalTxt.Text, out subTotalPrice);
+
+          double discount = _factory.GetAccountMemeber(memberShipTypeId).MembershipDiscout(subTotalPrice);            
+          discountTxt.Text = discount.ToString();
             
+        }
+
+        private void discountTxt_TextChanged(object sender, EventArgs e)
+        {
+            totalTxt.Text = (double.Parse(subTotalTxt.Text) - double.Parse(discountTxt.Text)).ToString();
         }
     }
 }

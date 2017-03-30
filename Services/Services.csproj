@@ -43,6 +43,7 @@
     <Compile Include="BookServices.cs" />
     <Compile Include="ClientServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

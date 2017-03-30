@@ -43,9 +43,13 @@
             this.findClientBtn = new System.Windows.Forms.Button();
             this.buyBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.totalTxt = new System.Windows.Forms.TextBox();
+            this.subTotalTxt = new System.Windows.Forms.TextBox();
             this.memeberLbl = new System.Windows.Forms.Label();
-            this.memeberTxt = new System.Windows.Forms.TextBox();
+            this.searchBookBtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.discountTxt = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.totalTxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.itemDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,14 +90,16 @@
             // clientCbo
             // 
             this.clientCbo.FormattingEnabled = true;
-            this.clientCbo.Location = new System.Drawing.Point(211, 52);
+            this.clientCbo.Location = new System.Drawing.Point(213, 12);
             this.clientCbo.Name = "clientCbo";
             this.clientCbo.Size = new System.Drawing.Size(302, 21);
             this.clientCbo.TabIndex = 4;
+            this.clientCbo.Visible = false;
             this.clientCbo.SelectedIndexChanged += new System.EventHandler(this.clientCbo_SelectedIndexChanged);
             // 
             // itemDgv
             // 
+            this.itemDgv.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
             this.itemDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.itemDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -107,6 +113,7 @@
             this.itemDgv.Name = "itemDgv";
             this.itemDgv.Size = new System.Drawing.Size(843, 158);
             this.itemDgv.TabIndex = 5;
+            this.itemDgv.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.itemDgv_RowsAdded);
             this.itemDgv.Click += new System.EventHandler(this.itemDgv_Click);
             // 
             // Id
@@ -139,10 +146,11 @@
             // bookCbo
             // 
             this.bookCbo.FormattingEnabled = true;
-            this.bookCbo.Location = new System.Drawing.Point(499, 110);
+            this.bookCbo.Location = new System.Drawing.Point(213, 35);
             this.bookCbo.Name = "bookCbo";
             this.bookCbo.Size = new System.Drawing.Size(356, 21);
             this.bookCbo.TabIndex = 6;
+            this.bookCbo.Visible = false;
             this.bookCbo.SelectedIndexChanged += new System.EventHandler(this.bookCbo_SelectedIndexChanged);
             // 
             // findClientBtn
@@ -159,7 +167,7 @@
             // 
             // buyBtn
             // 
-            this.buyBtn.Location = new System.Drawing.Point(679, 385);
+            this.buyBtn.Location = new System.Drawing.Point(679, 453);
             this.buyBtn.Name = "buyBtn";
             this.buyBtn.Size = new System.Drawing.Size(176, 23);
             this.buyBtn.TabIndex = 8;
@@ -170,19 +178,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(608, 333);
+            this.label3.Location = new System.Drawing.Point(616, 401);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Total";
             // 
-            // totalTxt
+            // subTotalTxt
             // 
-            this.totalTxt.Location = new System.Drawing.Point(679, 326);
-            this.totalTxt.Name = "totalTxt";
-            this.totalTxt.ReadOnly = true;
-            this.totalTxt.Size = new System.Drawing.Size(176, 20);
-            this.totalTxt.TabIndex = 10;
+            this.subTotalTxt.Location = new System.Drawing.Point(679, 319);
+            this.subTotalTxt.Name = "subTotalTxt";
+            this.subTotalTxt.ReadOnly = true;
+            this.subTotalTxt.Size = new System.Drawing.Size(176, 20);
+            this.subTotalTxt.TabIndex = 10;
+            this.subTotalTxt.TextChanged += new System.EventHandler(this.subTotalTxt_TextChanged);
             // 
             // memeberLbl
             // 
@@ -192,23 +201,63 @@
             this.memeberLbl.Size = new System.Drawing.Size(0, 13);
             this.memeberLbl.TabIndex = 11;
             // 
-            // memeberTxt
+            // searchBookBtn
             // 
-            this.memeberTxt.Location = new System.Drawing.Point(499, 12);
-            this.memeberTxt.Name = "memeberTxt";
-            this.memeberTxt.ReadOnly = true;
-            this.memeberTxt.Size = new System.Drawing.Size(100, 20);
-            this.memeberTxt.TabIndex = 12;
-            this.memeberTxt.Visible = false;
+            this.searchBookBtn.Location = new System.Drawing.Point(653, 117);
+            this.searchBookBtn.Name = "searchBookBtn";
+            this.searchBookBtn.Size = new System.Drawing.Size(202, 23);
+            this.searchBookBtn.TabIndex = 13;
+            this.searchBookBtn.Text = "Search book";
+            this.searchBookBtn.UseVisualStyleBackColor = true;
+            this.searchBookBtn.Click += new System.EventHandler(this.searchBookBtn_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(616, 365);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Discount";
+            // 
+            // discountTxt
+            // 
+            this.discountTxt.Location = new System.Drawing.Point(679, 358);
+            this.discountTxt.Name = "discountTxt";
+            this.discountTxt.ReadOnly = true;
+            this.discountTxt.Size = new System.Drawing.Size(176, 20);
+            this.discountTxt.TabIndex = 15;
+            this.discountTxt.TextChanged += new System.EventHandler(this.discountTxt_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(612, 326);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Sub-total";
+            // 
+            // totalTxt
+            // 
+            this.totalTxt.Location = new System.Drawing.Point(679, 394);
+            this.totalTxt.Name = "totalTxt";
+            this.totalTxt.ReadOnly = true;
+            this.totalTxt.Size = new System.Drawing.Size(176, 20);
+            this.totalTxt.TabIndex = 17;
             // 
             // ShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 420);
-            this.Controls.Add(this.memeberTxt);
-            this.Controls.Add(this.memeberLbl);
+            this.ClientSize = new System.Drawing.Size(884, 488);
             this.Controls.Add(this.totalTxt);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.discountTxt);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.searchBookBtn);
+            this.Controls.Add(this.memeberLbl);
+            this.Controls.Add(this.subTotalTxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buyBtn);
             this.Controls.Add(this.findClientBtn);
@@ -231,11 +280,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox clientIdTxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox fullNameTxt;
         private System.Windows.Forms.ComboBox clientCbo;
-        private System.Windows.Forms.DataGridView itemDgv;
         private System.Windows.Forms.ComboBox bookCbo;
         private System.Windows.Forms.Button findClientBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
@@ -244,8 +290,15 @@
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.Button buyBtn;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox subTotalTxt;
+        public System.Windows.Forms.TextBox clientIdTxt;
+        public System.Windows.Forms.TextBox fullNameTxt;
+        public System.Windows.Forms.Label memeberLbl;
+        private System.Windows.Forms.Button searchBookBtn;
+        public System.Windows.Forms.DataGridView itemDgv;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox discountTxt;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox totalTxt;
-        private System.Windows.Forms.Label memeberLbl;
-        private System.Windows.Forms.TextBox memeberTxt;
     }
 }
