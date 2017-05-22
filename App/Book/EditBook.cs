@@ -22,7 +22,7 @@ namespace App.Book
             idTxt.Text = book.Id.ToString();
             nameTxt.Text = book.Name;
             descriptionTxt.Text = book.Description;
-            priceTxt.Text = book.Price.ToString();            
+            priceTxt.Text = Math.Round(book.Price,2).ToString();            
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace App.Book
             book.Id = int.Parse(idTxt.Text);
             book.Name = nameTxt.Text;
             book.Description = descriptionTxt.Text;
-            book.Price = double.Parse(priceTxt.Text);
+            book.Price = Math.Round(double.Parse(priceTxt.Text));
 
             try
             {

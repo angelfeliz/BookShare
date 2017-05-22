@@ -152,7 +152,7 @@ namespace App
                 double.TryParse(itemDgv.Rows[x].Cells[2].Value.ToString(), out price);
                 total = total + price;
             }
-            subTotalTxt.Text = total.ToString();
+            subTotalTxt.Text = Math.Round(total, 2).ToString();
         }
 
         private void subTotalTxt_TextChanged(object sender, EventArgs e)
@@ -162,13 +162,13 @@ namespace App
           double.TryParse(subTotalTxt.Text, out subTotalPrice);
 
           double discount = _factory.GetAccountMemeber(memberShipTypeId).MembershipDiscout(subTotalPrice);            
-          discountTxt.Text = discount.ToString();
+          discountTxt.Text = Math.Round(discount,2).ToString();
             
         }
 
         private void discountTxt_TextChanged(object sender, EventArgs e)
         {
-            totalTxt.Text = (double.Parse(subTotalTxt.Text) - double.Parse(discountTxt.Text)).ToString();
+            totalTxt.Text = Math.Round((double.Parse(subTotalTxt.Text) - double.Parse(discountTxt.Text))).ToString();
         }
     }
 }
